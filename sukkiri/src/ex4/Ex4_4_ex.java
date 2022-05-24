@@ -1,6 +1,10 @@
 package ex4;
 
-public class Ex4_4 {
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Ex4_4_ex {
 
 	public static void main(String[] args) {
 		// (1)
@@ -14,8 +18,24 @@ public class Ex4_4 {
 		System.out.println("1けたの数字を入力してください");
 		
 		// (3)
-		int input = new java.util.Scanner(System.in).nextInt();
-
+		int input = 0;
+		Scanner in = null;
+		try {
+			in = new java.util.Scanner(new File("ex4.txt"));
+			input = in.nextInt();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			if (in != null) {
+				try {
+					in.close();
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
+			}
+		}
 		// (4)
 		for (int num : numbers) {
 			if (input == num) {
