@@ -6,6 +6,9 @@ public class SuperHero extends Hero {
 	public SuperHero() {
 		System.out.println("SuperHeroのコンストラクタが動作");
 	}
+	public SuperHero(String name) {
+		this.name = name;
+	}
 	
 	public void fly() {
 		this.flying = true;

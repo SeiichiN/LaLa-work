@@ -9,7 +9,7 @@ public class Main {
 		Dog dog = new Dog();
 		dog.name = "犬";
 		dog.eat();
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 4; i++) {
 			dog.go();
 		}
 
