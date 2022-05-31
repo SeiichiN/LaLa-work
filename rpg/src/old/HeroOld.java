@@ -1,14 +1,14 @@
 package old;
 
-public class Hero {
+public class HeroOld {
 	public String name;
 	public int hp;
 	// public Sword sword;
 	
-	public Hero() {
+	public HeroOld() {
 		this("ダミー");
 	}
-	public Hero(String name) {
+	public HeroOld(String name) {
 		this.name = name;
 		this.hp = 100;
 	}
