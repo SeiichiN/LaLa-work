@@ -1,5 +1,6 @@
 package ex10;
 
+import world.Hero;
 import world.PoisonMatango;
 import world.SuperHero;
 
@@ -9,7 +10,7 @@ public class Main {
 		
 		PoisonMatango pm = new PoisonMatango('Z');
 
-		// Hero h = new Hero();
+		// Hero h = new Hero("ささき");
 		// pm.attack(h);
 		
 		SuperHero sh = new SuperHero("アサカ");
