@@ -7,7 +7,7 @@ public class SuperHero extends Hero {
 		System.out.println("SuperHeroのコンストラクタが動作");
 	}
 	public SuperHero(String name) {
-		this.name = name;
+		super(name);
 	}
 	
 	public void fly() {

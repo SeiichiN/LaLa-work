@@ -3,7 +3,6 @@ package world;
 public class Matango {
 	public int hp = 50;
 	public char suffix;
-
 	
 	public Matango() {
 		this.suffix = 'A';
