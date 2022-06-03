@@ -7,12 +7,12 @@ public class Main345 {
 
 	public static void main(String[] args) {
 		Hero h1 = new Hero();
-		h1.name = "ミナト";
-		h1.hp = 100;
+		h1.setName("ミナト");
+		h1.setHp(100);
 		
 		Hero h2 = new Hero();
-		h2.name = "アサカ";
-		h2.hp = 100;
+		h2.setName("アサカ");
+		h2.setHp(100);
 		
 		Wizard w = new Wizard();
 		w.name = "スガワラ";

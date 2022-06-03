@@ -8,8 +8,8 @@ public class Main362 {
 		Hero h1 = new Hero("サスケ");
 		Hero h2 = new Hero();
 		
-		System.out.println("h1:" + h1.name);
-		System.out.println("h2:" + h2.name);
+		System.out.println("h1:" + h1.getName());
+		System.out.println("h2:" + h2.getName());
 	}
 
 }

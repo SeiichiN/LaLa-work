@@ -1,4 +1,4 @@
-package ch11;
+package chap11;
 
 import world.Dancer;
 import world.Hero;

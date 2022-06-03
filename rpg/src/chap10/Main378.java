@@ -9,7 +9,7 @@ public class Main378 {
 		Hero h = new Hero();
 		h.run();
 		SuperHero sh = new SuperHero();
-		sh.name = "アサカ";
+		sh.setName("アサカ");
 		sh.run();
 
 		

@@ -15,8 +15,8 @@ public class Matango {
 		System.out.println("Matangoの攻撃");
 		System.out.println
 		  ("キノコ" + this.suffix + "の攻撃");
-		System.out.println(h.name + "に10のダメージを与えた。");
-		h.hp = h.hp - 10;
-		System.out.println(h.name + "のHP:" + h.hp);
+		System.out.println(h.getName() + "に10のダメージを与えた。");
+		// h.hp = h.hp - 10;
+		// System.out.println(h.name + "のHP:" + h.hp);
 	}
 }
