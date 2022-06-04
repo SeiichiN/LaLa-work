@@ -1,7 +1,7 @@
 package garden;
 
 public class Flower {
-	public String name;
+	private String name;
 	
 	public Flower() {
 		this.name = "花";
@@ -12,5 +12,11 @@ public class Flower {
 	
 	public void bloom() {
 		System.out.println(this.name + "が咲いた。");
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 }

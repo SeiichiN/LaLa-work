@@ -10,9 +10,10 @@ public class Rose extends Flower {
 	public Rose() {}
 	public Rose(String name) {
 		super(name);
+		// this.name = name;
 	}
 	
 	public void smell () {
-		System.out.println(this.name + "はいい香りがする。");
+		System.out.println(this.getName() + "はいい香りがする。");
 	}
 }
