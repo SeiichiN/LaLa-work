@@ -4,11 +4,18 @@ public class Main {
 
 	public static void main(String[] args) {
 		// 戦略クラスを選ぶ
-		Player com1 = new Player(new CleverNextHand());
-		System.out.println("comの次の手は " + com1.getHand() + "です。");
+		Com com1 = new Com(new RandomNextHand());
+		com1.setName("コム1");
 
-		Player com2 = new Player(new RandomNextHand());
-		System.out.println("comの次の手は " + com2.getHand() + "です。");
+		User user = new User(new InputNextHand());
+		user.setName("チョロ助");
+		
+		com1.setHand();
+		user.setHand();
+		
+		Game game = new Game();
+		game.judge(com1, user);
+		game.dispResult(com1, user);
 	}
 
 }
