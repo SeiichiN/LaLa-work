@@ -1,7 +1,6 @@
 package v2;
 
 public class Game {
-	private final String[] hands = {"グー", "チョキ", "パー"};
 	
 	public void judge(Com com, User user) {
 		int userHand = user.getHand();
@@ -22,7 +21,7 @@ public class Game {
 	}
 	public void dispResult(Com com, User user) {
 		System.out.println("ゲーム結果");
-		System.out.println(user.getName() + ":" + hands[user.getHand()] + ":" + user.getResult());
-		System.out.println(com.getName() + ":" + hands[com.getHand()] + ":" + com.getResult());
+		System.out.println(com);
+		System.out.println(user);
 	}
 }

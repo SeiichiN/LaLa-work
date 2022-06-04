@@ -38,5 +38,7 @@ public abstract class Player {
 		this.nextHand = nextHand;
 	}
 	
-	
+	public String toString() {
+		return this.name + ":" + Const.hands[this.hand] + ":" + this.result;
+	}
 }
