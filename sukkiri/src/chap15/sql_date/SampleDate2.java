@@ -26,7 +26,6 @@ public class SampleDate2 {
 	public static void main(String[] args) {
 		Connection conn = null;
 		try {
-			@SuppressWarnings("deprecation")
 			Date sqlDate = new Date(Calendar.getInstance().getTimeInMillis());
 			Timestamp timestamp = new Timestamp(Calendar.getInstance().getTimeInMillis() - 1000*60*60*24);
 
