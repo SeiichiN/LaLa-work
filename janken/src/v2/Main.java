@@ -10,12 +10,16 @@ public class Main {
 		User user = new User(new InputNextHand());
 		user.setName("チョロ助");
 		
-		com1.setHand();
-		user.setHand();
-		
-		Game game = new Game();
-		game.judge(com1, user);
-		game.dispResult(com1, user);
+		Game game = null;
+		do {
+			com1.setHand();
+			user.setHand();
+
+			game = new Game();
+			game.judge(com1, user);
+			game.dispResult(com1, user);
+		} while (game.isRetry());
+		System.out.println("bye!");
 	}
 
 }
