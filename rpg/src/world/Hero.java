@@ -52,4 +52,10 @@ public class Hero {
 	public void run() {
 		System.out.println(this.name + "は、逃げ出した");
 	}
+	public Sword getSword() {
+		return sword;
+	}
+	public void setSword(Sword sword) {
+		this.sword = sword;
+	}
 }
