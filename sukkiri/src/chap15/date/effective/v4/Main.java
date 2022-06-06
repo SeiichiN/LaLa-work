@@ -13,11 +13,14 @@ public class Main {
         Period p = new Period(start, end);
         System.out.println("period:" + p.start() + ":" + p.end());
         
-        // end = LocalDate.of(1978, 1, 2);
+        // plusDays()メソッドは、LocalDateインスタンスのコピーを返す。
+        // つまり、左辺の end には、別のインスタンスへの参照が代入されている。
         end = end.plusDays(1);
-        System.out.println("end:" + end);
-        System.out.println("end-hash:" + end.hashCode());
+        System.out.println("end2:" + end);
+        System.out.println("end2-hash:" + end.hashCode());
         System.out.println("period:" + p.start() + ":" + p.end());
+        // しかし Periodクラスの end フィールドは前のインスタンスへの参照を持ち続けている。
+        System.out.println("p.end-hash:" + p.end().hashCode());
     }
 }
 
