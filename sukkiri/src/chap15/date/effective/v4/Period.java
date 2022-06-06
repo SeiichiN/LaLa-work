@@ -7,11 +7,12 @@ public final class Period {
     private final LocalDate end;
 
     public Period(LocalDate start, LocalDate end) {
+        this.start = start;
+        this.end = end;
+        System.out.println("Period-end-hashcode:" + this.end.hashCode());
         if (start.compareTo(end) > 0) {
             throw new IllegalArgumentException(start + " after " + end);
         }
-        this.start = start;
-        this.end = end;
     }
 
     public LocalDate start() {

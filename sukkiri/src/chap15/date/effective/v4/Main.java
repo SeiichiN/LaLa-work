@@ -8,6 +8,7 @@ public class Main {
         LocalDate end = start.plusDays(1);
         System.out.println("start:" + start);
         System.out.println("end:" + end);
+        System.out.println("end-hash:" + end.hashCode());
         
         Period p = new Period(start, end);
         System.out.println("period:" + p.start() + ":" + p.end());
@@ -15,6 +16,7 @@ public class Main {
         // end = LocalDate.of(1978, 1, 2);
         end = end.plusDays(1);
         System.out.println("end:" + end);
+        System.out.println("end-hash:" + end.hashCode());
         System.out.println("period:" + p.start() + ":" + p.end());
     }
 }

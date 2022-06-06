@@ -7,11 +7,12 @@ public final class Period {
     private final Date end;
 
     public Period(Date start, Date end) {
+        this.start = start;
+        this.end = end;
+        System.out.println("this.end-hashcode:" + this.end.hashCode());
         if (start.compareTo(end) > 0) {
             throw new IllegalArgumentException(start + " after " + end);
         }
-        this.start = start;
-        this.end = end;
     }
 
     public Date start() {

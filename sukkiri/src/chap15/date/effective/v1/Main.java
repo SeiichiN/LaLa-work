@@ -8,12 +8,14 @@ public class Main {
         Date end = new Date();
         System.out.println("start:" + start);
         System.out.println("end:" + end);
+        System.out.println("end-hashcode:" + end.hashCode());
         
         Period p = new Period(start, end);
         System.out.println("period:" + p.start() + ":" + p.end());
         
         end.setYear(78);
         System.out.println("end:" + end);
+        System.out.println("end-hashcode:" + end.hashCode());
         System.out.println("period:" + p.start() + ":" + p.end());
     }
 }
