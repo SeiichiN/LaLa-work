@@ -1,8 +1,9 @@
-package v2;
+package v3;
 
 import java.util.Scanner;
 
 public class Game {
+	private String msg;
 	
 	public void judge(Com com, User user) {
 		int userHand = user.getHand();
@@ -11,30 +12,24 @@ public class Game {
 			// ひきわけ
 			com.setResult("draw");
 			user.setResult("draw");
+			msg = "引き分けです。";
 		} else if ((userHand + 1) % 3 == comHand) {
 			// userの勝ち
 			com.setResult("lose");
 			user.setResult("win");
+			msg = "あなたの勝ちです。";
 		} else {
 			// comの勝ち
 			com.setResult("win");
 			user.setResult("lose");
+			msg = "わたしの勝ちです。";
 		}
 	}
 	public void dispResult(Com com, User user) {
 		System.out.println("ゲーム結果");
 		System.out.println(com);
 		System.out.println(user);
-		System.out.println(convToJp(com));
-	}
-	public String convToJp(Com com) {
-		if (com.getResult().equals("lose")) { 
-			return "あなたの勝ちです。"; 
-		} else if (com.getResult().equals("win")) {
-			return "わたしの勝ちです。";
-		} else {
-			return "引き分けです。";
-		}
+		System.out.println(msg);
 	}
 	
 	public boolean isRetry() {
