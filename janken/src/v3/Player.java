@@ -9,6 +9,10 @@ public abstract class Player {
 	
 	public Player(NextHand nextHand) {
 		this.nextHand = nextHand;
+		if (nextHand instanceof CleverNextHand) {
+			CleverNextHand cnh = (CleverNextHand) nextHand;
+			cnh.setPlayer(this);
+		}
 	}
 	
 	public String toString() {
