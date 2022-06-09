@@ -6,10 +6,8 @@ public class Main {
 		System.out.println("NINZU:" + Const.NINZU);
 		
 		// コム1
-		// CleverNextHand nHand = new CleverNextHand();
 		Com com1 = new Com(new CleverNextHand());
 		com1.setName("コム１");
-		// nHand.setPlayer(com1);
 		
 		// コム2
 		Com com2 = new Com(new RandomNextHand());
