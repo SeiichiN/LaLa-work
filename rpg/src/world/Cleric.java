@@ -3,11 +3,11 @@ package world;
 import java.util.Random;
 
 public class Cleric {
-	String name;
-	int hp = 50;
-	final int HP_MAX = 50;
-	int mp = 10;
-	final int MP_MAX = 10;
+	private String name;
+	private int hp = 50;
+	public static final int HP_MAX = 50;
+	private int mp = 10;
+	public static final int MP_MAX = 10;
 
 	public void selfAid() {
 		this.mp = this.mp - 5;
@@ -35,4 +35,33 @@ public class Cleric {
 		System.out.println("MPが" + kaihuku + "回復した。");
 		return kaihuku;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
+	}
+
+	public static int getHpMax() {
+		return HP_MAX;
+	}
+
 }
