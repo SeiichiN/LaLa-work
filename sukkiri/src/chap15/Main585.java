@@ -16,8 +16,10 @@ public class Main585 {
 		long sec = milis / 1000L;
 		System.out.println(sec);
 		
-		long oneday = 24 * 60 * 60 * 1000L;
-		long day = milis / oneday;
+		int intsec = (int) sec;
+		System.out.println(intsec);
+		int oneday = 24 * 60 * 60;
+		int day = intsec / oneday;
 		// String s = f.format(l);
 		System.out.println(day);
 	}
