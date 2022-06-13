@@ -1,0 +1,17 @@
+以下のクラスを使って、本のデータを格納できるように、コンストラクタ、ゲッター、セッター
+を追加しなさい。
+
+
+public class Book {
+  private String title;
+  private String author;
+
+}
+
+「ゲド戦記」アーシュラ・K・ル=グウィン
+というように、何か3冊、本のデータを作成し、ArrayListに追加しなさい。
+
+ArrayList の名前は bookList としなさい。
+
+リストの一覧を表示しなさい。
+
